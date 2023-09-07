@@ -1,0 +1,15 @@
+<script setup>
+import GuestLayout from '@/Layouts/GuestLayout.vue'
+import Label from '@/Components/InputLabel.vue' //instead of label
+import Input from '@/Components/TextInput.vue' //instead of input
+
+const emitTest = e => console.log(e) 
+</script>
+
+<template>
+<GuestLayout>
+    <Label value="件名">title</Label>
+    <Input modelValue="初期値" @update:modelValue="emitTest"></Input>
+</GuestLayout>
+
+</template>
